@@ -1,7 +1,10 @@
+:root {
+  --grey: #343436;
+}
 html {
   box-sizing: border-box;
   font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
-    Sans-Serif;
+  Sans-Serif;
   font-weight: normal;
   color: #272727;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
@@ -31,4 +34,37 @@ h6 {
   font-weight: normal;
   margin: 0;
   font-size: 1.5em;
+}
+
+.codepen {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr auto;
+  height: 100vh;
+  color: white;
+}
+
+.codepen >* {
+  border:1px solid black;
+}
+
+
+/* Editor! */
+.code {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #1b2b34;
+}
+
+.editor {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.editor__header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 5px;
+  grid-gap: 5px;
+  background: rgba(0, 0, 0, 0.1);
 }
